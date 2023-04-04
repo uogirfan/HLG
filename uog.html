@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+
+    <html  dir="ltr" lang="en" xml:lang="en">
+    <head>
+        <title>IT334_F22_C: Finalterm_Lab Task</title>
+        <link rel="shortcut icon" href="https://lms.uog.edu.pk/pluginfile.php/1/theme_moove/favicon/1679902348/favicon.ico" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, IT334_F22_C: Finalterm_Lab Task" />
+<link rel="stylesheet" type="text/css" href="https://lms.uog.edu.pk/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://lms.uog.edu.pk/theme/styles.php/moove/1679902348_1/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/lms.uog.edu.pk","sesskey":"xgGSU2Nf0P","sessiontimeout":"2700","themerev":"1679902348","slasharguments":1,"theme":"moove","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1679902349","admin":"admin","svgicons":true,"usertimezone":"Asia\/Karachi","contextid":1729482,"langrev":1679902349,"templaterev":"1679902349"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/lms.uog.edu.pk\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/lms.uog.edu.pk\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/lms.uog.edu.pk\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/lms.uog.edu.pk\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/lms.uog.edu.pk\/theme\/yui_combo.php?m\/1679902349\/","combine":true,"comboBase":"https:\/\/lms.uog.edu.pk\/theme\/yui_combo.php?","ext":false,"root":"m\/1679902349\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-block_xp-rulepicker"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_snippet-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_teamsmeeting-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/lms.uog.edu.pk\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/lms.uog.edu.pk\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1679902349\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/lms.uog.edu.pk\/lib\/javascript.php\/1679902349\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/lms.uog.edu.pk\/lib\/javascript.php\/1679902349\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.2\/MathJax.js?delayStartupUntil=configured"},"mod_assign":{"name":"mod_assign","fullpath":"https:\/\/lms.uog.edu.pk\/lib\/javascript.php\/1679902349\/mod\/assign\/module.js","requires":[]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    </head>
+    
+    <body  id="page-mod-assign-view" class="format-weeks  path-mod path-mod-assign chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam lms-uog-edu-pk pagelayout-incourse course-37312 context-1729482 cmid-1101133 category-3914 ">
+    
+
+<div id="accessibilitybar" class="fixed-top">
+    <div class="container">
+        <div class="bars">
+            <div class="fontsize">
+                <span>Font size</span>
+                <ul>
+                    <li><a class="btn btn-default" data-action="decrease" title="Decrease font size" id="fontsize_dec">A-</a></li>
+                    <li><a class="btn btn-default" data-action="reset" title="Reset font size" id="fontsize_reset">A</a></li>
+                    <li><a class="btn btn-default" data-action="increase" title="Increase font size" id="fontsize_inc">A+</a></li>
+                </ul>
+            </div>
+            <div class="sitecolor">
+                <span>Site color</span>
+                <ul>
+                    <li><a class="btn btn-default" data-action="reset" title="Reset site color" id="sitecolor_color1">R</a></li>
+                    <li><a class="btn btn-default" data-action="sitecolor-color-2" title="Low contrast 1" id="sitecolor_color2">A</a></li>
+                    <li><a class="btn btn-default" data-action="sitecolor-color-3" title="Low contrast 2" id="sitecolor_color3">A</a></li>
+                    <li><a class="btn btn-default" data-action="sitecolor-color-4" title="High contrast" id="sitecolor_color4">A</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="fixed-top navbar navbar-light navbar-expand moodle-has-zindex">
+        <div data-region="drawer-toggle" class="d-inline-block mr-3 drawer-toggle">
+            <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="slicon-menu"></i><span class="sr-only">Side panel</span></button>
+        </div>
+
+    <a href="https://lms.uog.edu.pk" class="navbar-brand has-logo
+            ">
+            <span class="logo d-none d-sm-inline">
+                <img src="//lms.uog.edu.pk/pluginfile.php/1/theme_moove/logo/1679902348/LMS-Logo-312x146-px%20%281%29.png" alt="UOGLMS">
+            </span>
+    </a>
+
+    <ul class="navbar-nav d-none d-md-flex custom-menus">
+        <!-- custom_menu -->
+        <div class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-642817c5aa1d9642817c59ea844" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+        Student
+    </a>
+    <div class="dropdown-menu" aria-labelledby="drop-down-642817c5aa1d9642817c59ea844">
+                <a class="dropdown-item" href="https://lms.uog.edu.pk/uog/reports/timetable.php" >My Time Table</a>
+                <a class="dropdown-item" href="https://lms.uog.edu.pk/uog/gradebook/StudentSemesterResult.php" >Semester Grades</a>
+                <a class="dropdown-item" href="https://lms.uog.edu.pk/uog/gradebook/StudentSemesterDetailResult.php" >Semester Detail Grades</a>
+                <a class="dropdown-item" href="https://lms.uog.edu.pk/uog/gradebook/StudentExamDateSheet.php" >Exam Date Sheet</a>
+    </div>
+</div><div class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-642817c5aa26b642817c59ea845" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+        User Links
+    </a>
+    <div class="dropdown-menu" aria-labelledby="drop-down-642817c5aa26b642817c59ea845">
+                <a class="dropdown-item" href="https://uog.edu.pk/en/academics/academic-calendar"target="_blank" >UoG Academic Calendar</a>
+                <a class="dropdown-item" href="http://www.digitallibrary.edu.pk/Open.htm"target="_blank" >HEC Digital Library</a>
+                <a class="dropdown-item" href="https://www.youtube.com/watch?v=hl74T-31tKI%22target%3D%22_blank" >LMS Complete Video Tutorial</a>
+                <a class="dropdown-item" href="https://www.youtube.com/watch?v=cO34cgXcpA0%22target%3D%22_blank" >MS Teamsmeeting and LMS</a>
+    </div>
+</div>
+        <!-- page_heading_menu -->
+        
+    </ul>
+    <ul class="nav navbar-nav ml-auto">
+        <div class="d-none d-lg-block">
+            
+        </div>
+
+        <li class="nav-item lang-menu">
+            
+        </li>
+
+        <div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="31860"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        role="button"
+        aria-controls="popover-region-container-642817c5aacf9642817c59ea846"
+        aria-haspopup="true"
+        aria-label="Show notification window with no new notifications"
+        tabindex="0">
+                <i class="slicon-bell" title="Toggle notifications menu"></i>
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div 
+        id="popover-region-container-642817c5aacf9642817c59ea846"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button"
+                    href="#"
+                    title="Mark all as read"
+                    data-action="mark-all-read"
+                    role="button">
+                    <span class="normal-icon"><i class="slicon-check" alt="Mark all as read"></i></span>
+                    <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
+                </a>
+
+    <div class="hover-tooltip">
+        Mark all as read
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="https://lms.uog.edu.pk/message/notificationpreferences.php?userid=31860"
+                    title="Notification preferences">
+                    <i class="slicon-settings" alt="Notification preferences"></i>
+                </a>
+
+    <div class="hover-tooltip">
+        Notification preferences
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://lms.uog.edu.pk/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div>
+
+        <li class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-1-menubar" role="menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a href="#" tabindex="0" class=" dropdown-toggle icon-no-margin" id="action-menu-toggle-1" aria-label="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-1-menu">
+                            
+                            <span class="userbutton"><span class="usertext"></span><span class="avatars"><span class="avatar current"><img src="https://lms.uog.edu.pk/theme/image.php/moove/core/1679902348/u/f2" class="userpicture defaultuserpic" width="35" height="35" aria-hidden="true" /></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+                                        <a href="https://lms.uog.edu.pk/user/profile.php?id=31860" class="dropdown-item text-username menu-action" role="menuitem" aria-labelledby="actionmenuaction-1">
+                                                <i class="icon fa slicon-user fa-fw "  title="MUHAMMAD IRFAN" aria-label="MUHAMMAD IRFAN"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-1">
+                                                MUHAMMAD IRFAN
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://lms.uog.edu.pk/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-2">
+                                                <i class="icon fa slicon-speedometer fa-fw "  title="Dashboard" aria-label="Dashboard"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-2">
+                                                Dashboard
+                                            </span>
+                                        </a>
+                                        <a href="https://lms.uog.edu.pk/user/profile.php?id=31860" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-3">
+                                                <i class="icon fa slicon-user fa-fw "  title="Profile" aria-label="Profile"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-3">
+                                                Profile
+                                            </span>
+                                        </a>
+                                        <a href="https://lms.uog.edu.pk/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4">
+                                                <i class="icon fa slicon-bubble fa-fw "  title="Messages" aria-label="Messages"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-4">
+                                                Messages
+                                            </span>
+                                        </a>
+                                        <a href="https://lms.uog.edu.pk/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5">
+                                                <i class="icon fa slicon-wrench fa-fw "  title="Preferences" aria-label="Preferences"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-5">
+                                                Preferences
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://lms.uog.edu.pk/login/logout.php?sesskey=xgGSU2Nf0P" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+                                                <i class="icon fa slicon-logout fa-fw "  title="Log out" aria-label="Log out"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-6">
+                                                Log out
+                                            </span>
+                                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></li>
+    </ul>
+</nav>
+    
+    <div id="page-wrapper">
+    
+        <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="https://lms.uog.edu.pk/lib/javascript.php/1679902349/lib/babel-polyfill/polyfill.min.js"></script>
+<script src="https://lms.uog.edu.pk/lib/javascript.php/1679902349/lib/mdn-polyfills/polyfill.js"></script>
+<script src="https://lms.uog.edu.pk/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://lms.uog.edu.pk/lib/javascript.php/1679902349/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card ">
+            <div class="card-body ">
+                <div class="d-flex align-items-center">
+                    <div class="mr-auto">
+                        <div class="page-context-header"><div class="page-header-headings"><h1>Virtual Systems and Services Lab</h1></div></div>
+                    </div>
+
+                    <div class="header-actions-container flex-shrink-0" data-region="header-actions-container">
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div id="page-navbar">
+                        <nav>
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://lms.uog.edu.pk/my/" >Dashboard</a></li>
+                <li class="breadcrumb-item"><span class="no-link">My courses</span></li>
+                <li class="breadcrumb-item"><a href="https://lms.uog.edu.pk/course/view.php?id=37312" title="Virtual Systems and Services Lab">IT334_F22_C</a></li>
+                <li class="breadcrumb-item"><span class="no-link">26 FEBRUARY, 2023 - 05 MARCH, 2023</span></li>
+                <li class="breadcrumb-item"><a href="https://lms.uog.edu.pk/mod/assign/view.php?id=1101133" title="Assignment">Finalterm_Lab Task</a></li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="ml-auto d-flex">
+                        
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-12">
+                <section id="region-main">
+                    <div class="card">
+                        <div class="card-body">
+                            <span class="notifications" id="user-notifications"></span>
+                            <div role="main"><span id="maincontent"></span><h2>Finalterm_Lab Task</h2><div id="intro" class="box py-3 generalbox boxaligncenter"><div id="assign_files_tree642817c59ea841"><ul><li yuiConfig='{"type":"html"}'><div><div class="fileuploadsubmission"><img class="icon icon" alt="Final_Assessment_Lab.docx" title="Final_Assessment_Lab.docx" src="https://lms.uog.edu.pk/theme/image.php/moove/core/1679902348/f/document" /> <a target="_blank" href="https://lms.uog.edu.pk/pluginfile.php/1729482/mod_assign/introattachment/0/Final_Assessment_Lab.docx?forcedownload=1">Final_Assessment_Lab.docx</a>   </div><div class="fileuploadsubmissiontime">4 March 2023, 9:43 AM</div></div></li></ul></div></div><div class="submissionstatustable"><h3>Submission status</h3><div class="box py-3 boxaligncenter submissionsummarytable"><table class="generaltable">
+<tbody><tr class="">
+<th class="cell c0" style="" scope="row">Submission status</th>
+<td class="submissionstatussubmitted cell c1 lastcol" style="">Submitted for grading</td>
+</tr>
+<tr class="">
+<th class="cell c0" style="" scope="row">Grading status</th>
+<td class="submissiongraded cell c1 lastcol" style="">Graded</td>
+</tr>
+<tr class="">
+<th class="cell c0" style="" scope="row">Due date</th>
+<td class="cell c1 lastcol" style="">Thursday, 9 March 2023, 2:00 PM</td>
+</tr>
+<tr class="">
+<th class="cell c0" style="" scope="row">Time remaining</th>
+<td class="earlysubmission cell c1 lastcol" style="">Assignment was submitted 23 hours 53 mins early</td>
+</tr>
+<tr class="">
+<th class="cell c0" style="" scope="row">Last modified</th>
+<td class="cell c1 lastcol" style="">Wednesday, 8 March 2023, 2:06 PM</td>
+</tr>
+<tr class="">
+<th class="cell c0" style="" scope="row">File submissions</th>
+<td class="cell c1 lastcol" style=""><div class="box py-3 boxaligncenter plugincontentsummary summary_assignsubmission_file_3169359"><div id="assign_files_tree642817c59ea8416"><ul><li yuiConfig='{"type":"html"}'><div><div class="fileuploadsubmission"><img class="icon icon" alt="VSS20LAB20Assignment20220final20Term.pdf" title="VSS20LAB20Assignment20220final20Term.pdf" src="https://lms.uog.edu.pk/theme/image.php/moove/core/1679902348/f/pdf" /> <a target="_blank" href="https://lms.uog.edu.pk/pluginfile.php/1729482/assignsubmission_file/submission_files/3169359/VSS20LAB20Assignment20220final20Term.pdf?forcedownload=1">VSS20LAB20Assignment20220final20Term.pdf</a>   </div><div class="fileuploadsubmissiontime">8 March 2023, 2:06 PM</div></div></li></ul></div></div></td>
+</tr>
+<tr class="lastrow">
+<th class="cell c0" style="" scope="row">Submission comments</th>
+<td class="cell c1 lastcol" style=""><div class="box py-3 boxaligncenter plugincontentsummary summary_assignsubmission_comments_3169359"><div class="commentscontainer"><div style="display:none" id="cmt-tmpl"><div class="comment-message"><div class="comment-message-meta mr-3"><span class="picture">___picture___</span><span class="user">___name___</span> - <span class="time">___time___</span></div><div class="text">___content___</div></div></div><div class="mdl-left"><a class="showcommentsnonjs" href="https://lms.uog.edu.pk/mod/assign/view.php?id=1101133&amp;rownum=0&amp;useridlistid=642817c599081959869263&amp;action&amp;nonjscomment=1&amp;comment_itemid=3169359&amp;comment_context=1729482&amp;comment_component=assignsubmission_comments&amp;comment_area=submission_comments">Show comments</a><a class="comment-link" id="comment-link-642817c5b26be" href="#" role="button" aria-expanded="false"><i class="icon fa fa-plus-square fa-fw "  title="Comments" aria-label="Comments"></i><span id="comment-link-text-642817c5b26be">Comments (0)</span></a><div id="comment-ctrl-642817c5b26be" class="comment-ctrl"><ul id="comment-list-642817c5b26be" class="comment-list"><li class="first"></li></ul><div id="comment-pagination-642817c5b26be" class="comment-pagination"></div><div class="comment-area"><div class="db"><textarea name="content" rows="2" id="dlg-content-642817c5b26be" aria-label="Add a comment..." cols="20"></textarea></div><div class="fd" id="comment-action-642817c5b26be"><a id="comment-action-post-642817c5b26be" href="#">Save comment</a><span> | </span><a id="comment-action-cancel-642817c5b26be" href="#">Cancel</a></div></div><div class="clearer"></div></div></div></div></div></td>
+</tr>
+</tbody>
+</table>
+</div></div><div class="feedback"><h3>Feedback</h3><div class="box py-3 boxaligncenter feedbacktable"><table class="generaltable">
+<tbody><tr class="">
+<th class="cell c0" style="" scope="row">Grade</th>
+<td class="cell c1 lastcol" style="">Grade of final cannot be displayed as per UoG policy.</td>
+</tr>
+<tr class="">
+<th class="cell c0" style="" scope="row">Graded on</th>
+<td class="cell c1 lastcol" style="">Friday, 31 March 2023, 10:50 AM</td>
+</tr>
+<tr class="lastrow">
+<th class="cell c0" style="" scope="row">Graded by</th>
+<td class="cell c1 lastcol" style=""><a href="https://lms.uog.edu.pk/user/view.php?id=33675&amp;course=37312"><img src="https://lms.uog.edu.pk/theme/image.php/moove/core/1679902348/u/f2" class="userpicture defaultuserpic" width="35" height="35" alt="Picture of Rabia Butt" title="Picture of Rabia Butt" /></a><img class="icon spacer" width="30" height="1" alt="" aria-hidden="true" src="https://lms.uog.edu.pk/theme/image.php/moove/core/1679902348/spacer" />Rabia Butt</td>
+</tr>
+</tbody>
+</table>
+</div></div></div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="card activity-navigation">
+    <div class="card-body">
+        <div class="row">
+    <div class="col-md-4">                <div id="prev-activity" class="float-left">
+                        <span class="nav-guide">
+                            Previous activity
+                        </span>
+                            <a href="https://lms.uog.edu.pk/mod/assign/view.php?id=1112992&forceview=1" id="prev-activity-link" class="btn btn-link"  title="SessionalTask_IT-334" >&#x25C4; SessionalTask_IT-334</a>
+                </div>
+</div>
+    <div class="col-md-4">                <div class="mdl-align">
+                    <div class="urlselect">
+    <form method="post" action="https://lms.uog.edu.pk/course/jumpto.php" class="form-inline" id="url_select_f642817c59ea8415">
+        <input type="hidden" name="sesskey" value="xgGSU2Nf0P">
+            <label for="jump-to-activity" class="sr-only">
+                Jump to...
+            </label>
+        <select  id="jump-to-activity" class="custom-select urlselect" name="jump"
+                 >
+                    <option value="" selected>Jump to...</option>
+                    <option value="/mod/forum/view.php?id=1085499&amp;forceview=1" >Announcements</option>
+                    <option value="/mod/attendance/view.php?id=1085500&amp;forceview=1" >Attendance</option>
+                    <option value="/mod/url/view.php?id=1085501&amp;forceview=1" >16 Week Plan</option>
+                    <option value="/mod/assign/view.php?id=1101132&amp;forceview=1" >Midterm_Lab Task</option>
+                    <option value="/mod/assign/view.php?id=1112992&amp;forceview=1" >SessionalTask_IT-334</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary ml-1" value="Go">
+            </noscript>
+    </form>
+</div>
+
+                </div>
+</div>
+    <div class="col-md-4">                <div id="next-activity" class="float-right">
+                </div>
+</div>
+</div>
+    </div>
+</div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    
+        
+    
+            <div id="nav-drawer" data-region="drawer" class="hidden-print moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+                <ul class="list-group metismenu">
+                            <li class="list-group-item" data-key="course-sections">
+                                <a class="m-l-0 has-arrow" href="javascript:void(0);">
+                                    <span class="text">Course sections</span>
+                                </a>
+                                <ul>
+                                </ul>
+                            </li>
+                                <li class="list-group-item list-group-item-action " data-key="participants">
+                                    <a href="https://lms.uog.edu.pk/user/index.php?id=37312">
+                                        <span class="text m-l-0">Participants</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-action " data-key="badgesview">
+                                    <a href="https://lms.uog.edu.pk/badges/view.php?type=2&amp;id=37312">
+                                        <span class="text m-l-0">Badges</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-action " data-key="competencies">
+                                    <a href="https://lms.uog.edu.pk/admin/tool/lp/coursecompetencies.php?courseid=37312">
+                                        <span class="text m-l-0">Competencies</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-action " data-key="grades">
+                                    <a href="https://lms.uog.edu.pk/grade/report/index.php?id=37312">
+                                        <span class="text m-l-0">Grades</span>
+                                    </a>
+                                </li>
+                        </ul>
+                        <ul class="list-group metismenu">
+                                <li class="list-group-item list-group-item-action " data-key="myhome">
+                                    <a href="https://lms.uog.edu.pk/my/">
+                                        <span class="text m-l-0">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-action " data-key="home">
+                                    <a href="https://lms.uog.edu.pk/?redirect=0">
+                                        <span class="text m-l-0">Site home</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-action " data-key="calendar">
+                                    <a href="https://lms.uog.edu.pk/calendar/view.php?view=month&amp;course=37312">
+                                        <span class="text m-l-0">Calendar</span>
+                                    </a>
+                                </li>
+                            <li class="list-group-item" data-key="mycourses">
+                                <a class="m-l-0 has-arrow" href="javascript:void(0);">
+                                    <span class="text">My courses</span>
+                                </a>
+                                <ul>
+                                            <li class="list-group-item list-group-item-action " data-key="26019">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=26019">
+                                                    <span class="text">PHY117(6863)_F20_IM</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="25970">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=25970">
+                                                    <span class="text">MATH107(8125)_F20_FM</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="25620">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=25620">
+                                                    <span class="text">ENG101(11204)_F20_MM</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="25396">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=25396">
+                                                    <span class="text">IT109(12138)_F20_CM</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="25399">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=25399">
+                                                    <span class="text">IT110(12139)_F20_CM</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="25451">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=25451">
+                                                    <span class="text">PKS101(5010)_F20_ULM</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="25390">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=25390">
+                                                    <span class="text">IT104(8606)_F20_CM</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="25393">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=25393">
+                                                    <span class="text">IT105(8607)_F20_CM</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="30324">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=30324">
+                                                    <span class="text">IT215_F21_C</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="30328">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=30328">
+                                                    <span class="text">IT216_F21_C</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="37319">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=37319">
+                                                    <span class="text">IT364_F22_C</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="37318">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=37318">
+                                                    <span class="text">IT303_F22_C</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="37315">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=37315">
+                                                    <span class="text">IT444_F22_C</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="37314">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=37314">
+                                                    <span class="text">IT417_F22_C</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="37312">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=37312">
+                                                    <span class="text">IT334_F22_C</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="37311">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/course/view.php?id=37311">
+                                                    <span class="text">IT333_F22_C</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="courseindexpage">
+                                                <a class="list-group-item list-group-item-action " href="https://lms.uog.edu.pk/my/">
+                                                    <span class="text">More...</span>
+                                                </a>
+                                            </li>
+                                </ul>
+                            </li>
+                                <li class="list-group-item list-group-item-action " data-key="privatefiles">
+                                    <a href="https://lms.uog.edu.pk/user/files.php">
+                                        <span class="text m-l-0">Private files</span>
+                                    </a>
+                                </li>
+                </ul>            </div>
+            
+            <div id="nav-drawer-footer">
+                <span id="themesettings-control">
+                    <i title="Accessibility settings"
+                       class="fa fa-universal-access">
+                    </i>
+                    <span class="text">Accessibility settings</span>
+                </span>
+            </div>
+    </div><!-- Ends .page-wrapper -->
+    
+<div id="top-footer">
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-7 contact">
+            <h3>Stay in touch</h3>
+            <h4></h4>
+            <ul>
+            </ul>
+        </div>
+        <div class="col-md-5 social">
+          <ul>
+
+
+
+
+
+          </ul>
+
+          <div class="plugins_standard_footer_html"><div class="tool_dataprivacy mb-2"><a class="btn btn-default" href="https://lms.uog.edu.pk/admin/tool/dataprivacy/summary.php"><i class='slicon-folder-alt'></i> Data retention summary</a></div></div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://lms.uog.edu.pk/lib/requirejs.php/1679902349/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://lms.uog.edu.pk/lib/javascript.php/1679902349/lib/jquery/jquery-3.4.1.min',
+        jqueryui: 'https://lms.uog.edu.pk/lib/javascript.php/1679902349/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://lms.uog.edu.pk/lib/javascript.php/1679902349/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://lms.uog.edu.pk/lib/javascript.php/1679902349/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://lms.uog.edu.pk/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage('en', {
+  "Audio Player": "Audio Player",
+  "Video Player": "Video Player",
+  "Play": "Play",
+  "Pause": "Pause",
+  "Replay": "Replay",
+  "Current Time": "Current Time",
+  "Duration": "Duration",
+  "Remaining Time": "Remaining Time",
+  "Stream Type": "Stream Type",
+  "LIVE": "LIVE",
+  "Seek to live, currently behind live": "Seek to live, currently behind live",
+  "Seek to live, currently playing live": "Seek to live, currently playing live",
+  "Loaded": "Loaded",
+  "Progress": "Progress",
+  "Progress Bar": "Progress Bar",
+  "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+  "Fullscreen": "Fullscreen",
+  "Non-Fullscreen": "Non-Fullscreen",
+  "Mute": "Mute",
+  "Unmute": "Unmute",
+  "Playback Rate": "Playback Rate",
+  "Subtitles": "Subtitles",
+  "subtitles off": "subtitles off",
+  "Captions": "Captions",
+  "captions off": "captions off",
+  "Chapters": "Chapters",
+  "Descriptions": "Descriptions",
+  "descriptions off": "descriptions off",
+  "Audio Track": "Audio Track",
+  "Volume Level": "Volume Level",
+  "You aborted the media playback": "You aborted the media playback",
+  "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+  "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+  "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+  "No compatible source was found for this media.": "No compatible source was found for this media.",
+  "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+  "Play Video": "Play Video",
+  "Close": "Close",
+  "Close Modal Dialog": "Close Modal Dialog",
+  "Modal Window": "Modal Window",
+  "This is a modal window": "This is a modal window",
+  "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+  ", opens captions settings dialog": ", opens captions settings dialog",
+  ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+  ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+  ", selected": ", selected",
+  "captions settings": "captions settings",
+  "subtitles settings": "subititles settings",
+  "descriptions settings": "descriptions settings",
+  "Text": "Text",
+  "White": "White",
+  "Black": "Black",
+  "Red": "Red",
+  "Green": "Green",
+  "Blue": "Blue",
+  "Yellow": "Yellow",
+  "Magenta": "Magenta",
+  "Cyan": "Cyan",
+  "Background": "Background",
+  "Window": "Window",
+  "Transparent": "Transparent",
+  "Semi-Transparent": "Semi-Transparent",
+  "Opaque": "Opaque",
+  "Font Size": "Font Size",
+  "Text Edge Style": "Text Edge Style",
+  "None": "None",
+  "Raised": "Raised",
+  "Depressed": "Depressed",
+  "Uniform": "Uniform",
+  "Dropshadow": "Dropshadow",
+  "Font Family": "Font Family",
+  "Proportional Sans-Serif": "Proportional Sans-Serif",
+  "Monospace Sans-Serif": "Monospace Sans-Serif",
+  "Proportional Serif": "Proportional Serif",
+  "Monospace Serif": "Monospace Serif",
+  "Casual": "Casual",
+  "Script": "Script",
+  "Small Caps": "Small Caps",
+  "Reset": "Reset",
+  "restore all settings to the default values": "restore all settings to the default values",
+  "Done": "Done",
+  "Caption Settings Dialog": "Caption Settings Dialog",
+  "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+  "End of dialog window.": "End of dialog window.",
+  "{1} is loading.": "{1} is loading."
+});
+
+    });
+});;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+        require(['jquery'], function($) {
+            $('#jump-to-activity').change(function() {
+                if (!$(this).val()) {
+                    return false;
+                }
+                $('#url_select_f642817c59ea8415').submit();
+            });
+        });
+    ;
+
+require(['theme_boost/loader']);
+
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+
+require(['theme_moove/metismenu', 'jquery'], function(metisMenu, $) {
+    $(".metismenu").metisMenu();
+});
+
+require([], function() {
+    var iconsearch = document.querySelector('.moove-search-input .slicon-magnifier');
+    var btnclosesearch = document.querySelector('.search-input-form .close-search');
+    var searchinputform = document.querySelector('.moove-search-input');
+
+    if (iconsearch) {
+
+        var togglesearchinputform = function() {
+            searchinputform.classList.toggle('expanded');
+        }
+
+        iconsearch.onclick = togglesearchinputform;
+        btnclosesearch.onclick = togglesearchinputform;
+    }
+});
+
+require(['theme_moove/accessibilitybar'], function(bar) {
+    bar.init();
+});
+
+require(['theme_moove/themesettings'], function(themesettings) {
+    themesettings.init();
+});
+
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(1729482, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.yui.add_module({"mod_assign":{"name":"mod_assign","fullpath":"https:\/\/lms.uog.edu.pk\/lib\/javascript.php\/1679902349\/mod\/assign\/module.js","requires":[]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/lms.uog.edu.pk\/lib\/javascript.php\/1679902349\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}});
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","addcomment":"Add a comment...","comments":"Comments","commentscount":"Comments ({$a})","commentsrequirelogin":"You need to log in to view the comments.","deletecommentbyon":"Delete comment posted by {$a->user} on {$a->time}","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+ M.util.js_pending('random642817c59ea842'); Y.use('mod_assign', function(Y) { M.mod_assign.init_tree(Y, true, "assign_files_tree642817c59ea841");  M.util.js_complete('random642817c59ea842'); });
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random642817c59ea8417'); Y.use('mod_assign', function(Y) { M.mod_assign.init_tree(Y, true, "assign_files_tree642817c59ea8416");  M.util.js_complete('random642817c59ea8417'); });
+ M.util.js_pending('random642817c59ea8418'); Y.on('domready', function() {  M.util.js_pending('random642817c59ea8418'); Y.use('core_comment', function(Y) { M.core_comment.init(Y, {"client_id":"642817c5b26be","commentarea":"submission_comments","itemid":"3169359","page":0,"courseid":"37312","contextid":1729482,"component":"assignsubmission_comments","notoggle":false,"autostart":false});  M.util.js_complete('random642817c59ea8418'); });  M.util.js_complete('random642817c59ea8418'); });
+ M.util.js_pending('random642817c59ea8419'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random642817c59ea8419'); });
+})();
+//]]>
+</script>
+
+    
+    </body>
+    </html>
